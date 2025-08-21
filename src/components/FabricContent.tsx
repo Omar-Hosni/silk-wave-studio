@@ -14,8 +14,8 @@ export function FabricContent({
   return (
     <div className="fabric-content">
       <img 
-        src="/lovable-uploads/fb5a62fa-bf47-43bb-bbc1-b8c998332ac1.png" 
-        alt="Company Logo" 
+        src="/lovable-uploads/b064ed03-6d47-43b1-8970-1947f4f02d59.png" 
+        alt="Symphony Neuro-Tech Logo" 
         className="fabric-logo"
       />
       

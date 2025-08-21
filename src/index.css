@@ -128,10 +128,14 @@ All colors MUST be HSL.
   .fabric-content {
     @apply relative z-10 flex flex-col items-center justify-center h-full px-6;
     background: var(--gradient-overlay);
+    animation: gentle-float 6s ease-in-out infinite;
   }
 
   .fabric-logo {
-    @apply w-16 h-16 md:w-20 md:h-20 mb-6 opacity-90;
+    @apply mb-6 opacity-90 max-w-xs md:max-w-sm object-contain;
+    height: auto;
+    width: auto;
+    max-height: 80px;
     filter: drop-shadow(var(--shadow-text));
   }
 
@@ -169,16 +173,46 @@ All colors MUST be HSL.
   }
 
   .custom-cursor {
-    @apply fixed w-4 h-4 pointer-events-none z-50;
-    mix-blend-mode: difference;
-    border: 1px solid white;
+    @apply fixed w-6 h-6 pointer-events-none z-50;
+    border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-    transition: transform 0.1s ease-out;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translate(-50%, -50%) scale(1);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .custom-cursor::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .custom-cursor:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
 @layer utilities {
+  @keyframes gentle-float {
+    0%, 100% { 
+      transform: translateY(0px) rotate(0deg); 
+    }
+    33% { 
+      transform: translateY(-8px) rotate(0.5deg); 
+    }
+    66% { 
+      transform: translateY(4px) rotate(-0.3deg); 
+    }
+  }
+
   @keyframes pulse-glow {
     0%, 100% { 
       opacity: 1; 
@@ -197,6 +231,10 @@ All colors MUST be HSL.
     75% { transform: translate(-10px, -5px) scale(1.01); }
   }
 
+  .animate-gentle-float {
+    animation: gentle-float 6s ease-in-out infinite;
+  }
+
   .animate-fabric-drift {
     animation: fabric-drift 20s ease-in-out infinite;
   }
@@ -207,7 +245,8 @@ All colors MUST be HSL.
 
   @media (prefers-reduced-motion: reduce) {
     .animate-fabric-drift,
-    .animate-pulse-glow {
+    .animate-pulse-glow,
+    .animate-gentle-float {
       animation: none;
     }
   }

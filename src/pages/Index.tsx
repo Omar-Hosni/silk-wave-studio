@@ -6,10 +6,10 @@ const Index = () => {
   return (
     <div className="fabric-container">
       <FabricWaveBackground 
-        contourFrequency={120}
-        warpAmount={0.3}
-        cursorStrength={0.8}
-        speed={0.2}
+        contourFrequency={80}
+        warpAmount={0.4}
+        cursorStrength={1.2}
+        speed={0.3}
       />
       <FabricContent 
         companyName="Symphony Neuro-Tech"
