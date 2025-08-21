@@ -61,7 +61,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Fabric Wave Colors
+				'fabric-teal': 'hsl(var(--fabric-teal))',
+				'fabric-magenta': 'hsl(var(--fabric-magenta))',
+				'fabric-amber': 'hsl(var(--fabric-amber))',
+				'fabric-dark': 'hsl(var(--fabric-dark))',
+				'fabric-surface': 'hsl(var(--fabric-surface))'
+			},
+			fontFamily: {
+				display: ['var(--font-display)'],
+				body: ['var(--font-body)']
+			},
+			backgroundImage: {
+				'gradient-iridescent': 'var(--gradient-iridescent)',
+				'gradient-overlay': 'var(--gradient-overlay)'
+			},
+			boxShadow: {
+				'fabric': 'var(--shadow-fabric)',
+				'text': 'var(--shadow-text)'
+			},
+			transitionTimingFunction: {
+				'fabric': 'cubic-bezier(0.23, 1, 0.32, 1)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +105,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fabric-drift': {
+					'0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+					'25%': { transform: 'translate(10px, -5px) scale(1.01)' },
+					'50%': { transform: 'translate(-5px, 10px) scale(0.99)' },
+					'75%': { transform: 'translate(-10px, -5px) scale(1.01)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { opacity: '1', filter: 'brightness(1)' },
+					'50%': { opacity: '0.9', filter: 'brightness(1.1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fabric-drift': 'fabric-drift 20s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite'
 			}
 		}
 	},

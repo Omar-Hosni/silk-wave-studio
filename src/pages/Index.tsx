@@ -1,12 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { FabricWaveBackground } from "@/components/FabricWaveBackground";
+import { FabricContent } from "@/components/FabricContent";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="fabric-container">
+      <FabricWaveBackground 
+        contourFrequency={120}
+        warpAmount={0.3}
+        cursorStrength={0.8}
+        speed={0.2}
+      />
+      <FabricContent 
+        companyName="Lovable"
+        description="Crafting the future with elegant technology and innovative AI-powered solutions that transform ideas into reality."
+        launchText="Launching Soon"
+      />
     </div>
   );
 };
