@@ -110,6 +110,7 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-body overflow-hidden;
     font-family: var(--font-body);
+    cursor: none; /* Hide default cursor for custom one */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -145,7 +146,12 @@ All colors MUST be HSL.
   }
 
   .fabric-description {
-    @apply text-lg md:text-xl text-muted-foreground max-w-2xl text-center mb-8 leading-relaxed;
+    @apply text-lg md:text-xl text-muted-foreground max-w-3xl text-center mb-6 leading-relaxed;
+    text-shadow: var(--shadow-text);
+  }
+
+  .fabric-subtitle {
+    @apply text-base md:text-lg text-muted-foreground/80 max-w-2xl text-center mb-8 leading-relaxed italic;
     text-shadow: var(--shadow-text);
   }
 
@@ -160,6 +166,15 @@ All colors MUST be HSL.
   .fabric-canvas {
     @apply absolute inset-0 w-full h-full;
     pointer-events: none;
+  }
+
+  .custom-cursor {
+    @apply fixed w-4 h-4 pointer-events-none z-50;
+    mix-blend-mode: difference;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+    transform: translate(-50%, -50%);
   }
 }
 

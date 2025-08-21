@@ -1,5 +1,6 @@
 import { FabricWaveBackground } from "@/components/FabricWaveBackground";
 import { FabricContent } from "@/components/FabricContent";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const Index = () => {
   return (
@@ -11,10 +12,12 @@ const Index = () => {
         speed={0.2}
       />
       <FabricContent 
-        companyName="Lovable"
-        description="Crafting the future with elegant technology and innovative AI-powered solutions that transform ideas into reality."
+        companyName="Symphony Neuro-Tech"
+        description="AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery."
+        subtitle="Designed by among the most experienced pioneers of the field"
         launchText="Launching Soon"
       />
+      <CustomCursor />
     </div>
   );
 };

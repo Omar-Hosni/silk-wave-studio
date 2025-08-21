@@ -1,12 +1,14 @@
 interface FabricContentProps {
   companyName?: string;
   description?: string;
+  subtitle?: string;
   launchText?: string;
 }
 
 export function FabricContent({
-  companyName = "Your Company",
-  description = "Crafting the future with elegant technology and innovative solutions.",
+  companyName = "Symphony Neuro-Tech",
+  description = "AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery.",
+  subtitle,
   launchText = "Launching Soon"
 }: FabricContentProps) {
   return (
@@ -24,6 +26,12 @@ export function FabricContent({
       <p className="fabric-description">
         {description}
       </p>
+      
+      {subtitle && (
+        <p className="fabric-subtitle">
+          {subtitle}
+        </p>
+      )}
       
       <div className="fabric-badge">
         <span>{launchText}</span>
