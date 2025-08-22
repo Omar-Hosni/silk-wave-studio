@@ -113,9 +113,9 @@ All colors MUST be HSL.
     cursor: none !important; /* Hide default cursor for custom one */
   }
 
-  html, * {
-    cursor: none !important; /* Ensure all elements hide cursor */
-  }
+  // html, * {
+  //   cursor: none !important; /* Ensure all elements hide cursor */
+  // }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
