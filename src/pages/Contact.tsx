@@ -67,9 +67,8 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl">
           <section className="space-y-12">
             <h1 className="text-4xl lg:text-6xl font-light leading-tight">
-              Let&apos;s create something
+              Composing Tomorrow
               <br />
-              <span className="text-gray-400">unforgettable</span>
             </h1>
 
             <article className="space-y-8">
