@@ -6,13 +6,17 @@ const Index = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Spline 3D Background */}
-      <iframe 
-        src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
-        className="absolute inset-0 w-full h-[90%] border-0"
-        title="3D Background"
-      />
-      
+      {/* Iframe Wrapper */}
+      <div className="absolute inset-0 w-full h-full flex justify-center items-center">
+        <div className="w-full h-[95%] overflow-hidden">
+          <iframe 
+            src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
+            className="w-full h-full border-0"
+            title="3D Background"
+          />
+        </div>
+      </div>
+    
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
         <div className="text-center space-y-8 pointer-events-auto">
