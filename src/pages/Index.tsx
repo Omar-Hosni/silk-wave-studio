@@ -18,7 +18,7 @@ const Index = () => {
       </div>
     
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
+      <div className="absolute mt-10 inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
         <div className="text-center space-y-8 pointer-events-auto">
           <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3">
             <span className="text-primary font-medium">Launching Soon</span>
