@@ -17,8 +17,8 @@ const Index = () => {
     </div>
     
       {/* Content Overlay - Mobile Responsive */}
-      <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4 sm:px-6">
-        <div className="text-center space-y-4 sm:space-y-6 pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
+      <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 px-4 sm:px-6">
+        <div className="text-center space-y-2 sm:space-y-3 max-w-xs sm:max-w-lg lg:max-w-2xl pointer-events-auto">
           {/* Logo */}
           <div className="">
             <img 
@@ -29,12 +29,13 @@ const Index = () => {
           </div>
           
           {/* Main Description */}
-          <p className="mb-10 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug max-w-2xl sm:max-w-lg mx-auto">
-            AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery.
+          <p className="mb-6 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-tight max-w-2xl sm:max-w-lg mx-auto">
+            AI-powered, clinic-ready focused ultrasound neuromodulation systems<br />
+            and treatment protocol discovery.
           </p>
           
           {/* Subtitle */}
-          <p className="mb-10 text-white/90 font-montserrat italic font-medium text-xs sm:text-sm lg:text-xl leading-relaxed">
+          <p className="mb-8 text-white/90 font-montserrat italic font-medium text-xs sm:text-sm lg:text-xl leading-relaxed">
             Designed by among the most experienced pioneers of the field
           </p>
           
