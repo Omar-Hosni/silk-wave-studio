@@ -8,10 +8,10 @@ const Index = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Iframe Wrapper */}
       <div className="absolute inset-0 w-full h-full flex justify-center items-center">
-        <div className="w-full h-[95%] overflow-hidden">
+        <div className="w-full h-full overflow-hidden">
           <iframe 
             src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
-            className="w-full h-full border-0"
+            className="w-full h-[95%] border-0"
             title="3D Background"
           />
         </div>
