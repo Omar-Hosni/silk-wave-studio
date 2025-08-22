@@ -5,15 +5,16 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Crop Spline at 95% of viewport height */}
-      <div className="absolute top-0 left-0 w-full h-[95vh] overflow-hidden">
-        <iframe
-          src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
-          className="w-full h-screen border-0" // still renders full scene, cropped by wrapper
-          title="3D Background"
-        />
-      </div>
+    <div className="relative w-full h-screen overflow-hidden bg-black">
+
+    {/* Crop Spline at 95% of viewport height */}
+    <div className="absolute top-0 left-0 w-full h-[93vh] overflow-hidden">
+      <iframe
+        src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
+        className="w-full h-screen border-0" // still renders full scene, cropped by wrapper
+        title="3D Background"
+      />
+    </div>
     
       {/* Content Overlay */}
       <div className="absolute mt-10 inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
