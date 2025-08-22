@@ -1,23 +1,34 @@
-import { FabricWaveBackground } from "@/components/FabricWaveBackground";
-import { FabricContent } from "@/components/FabricContent";
-import { CustomCursor } from "@/components/CustomCursor";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="fabric-container">
-      <FabricWaveBackground 
-        contourFrequency={80}
-        warpAmount={0.4}
-        cursorStrength={1.2}
-        speed={0.3}
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Spline 3D Background */}
+      <iframe 
+        src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
+        className="absolute inset-0 w-full h-full border-0"
+        title="3D Background"
       />
-      <FabricContent 
-        companyName="Symphony Neuro-Tech"
-        description="AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery."
-        subtitle="Designed by among the most experienced pioneers of the field"
-        launchText="Launching Soon"
-      />
-      <CustomCursor />
+      
+      {/* Content Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
+        <div className="text-center space-y-8 pointer-events-auto">
+          <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3">
+            <span className="text-primary font-medium">Launching Soon</span>
+          </div>
+          
+          <Button 
+            onClick={() => navigate('/contact')}
+            variant="outline"
+            className="bg-background/80 backdrop-blur-sm hover:bg-background/90"
+          >
+            Contact Us
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };
