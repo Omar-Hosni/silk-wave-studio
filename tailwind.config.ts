@@ -71,7 +71,8 @@ export default {
 			},
 			fontFamily: {
 				display: ['var(--font-display)'],
-				body: ['var(--font-body)']
+				body: ['var(--font-body)'],
+				montserrat: ['Montserrat', 'sans-serif']
 			},
 			backgroundImage: {
 				'gradient-iridescent': 'var(--gradient-iridescent)',
