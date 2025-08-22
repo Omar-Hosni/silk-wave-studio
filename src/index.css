@@ -239,7 +239,7 @@ All colors MUST be HSL.
   }
 
   
-
+  html, * { cursor: none !important; }
 
   .custom-cursor {
     @apply fixed w-6 h-6 pointer-events-none z-50;
@@ -320,7 +320,3 @@ All colors MUST be HSL.
     }
   }
 }
-
-html, body, #root {
-    cursor: auto !important;
-  }
