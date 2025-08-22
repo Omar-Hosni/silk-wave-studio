@@ -9,7 +9,7 @@ const Index = () => {
       {/* Spline 3D Background */}
       <iframe 
         src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
-        className="absolute inset-0 w-full h-full border-0"
+        className="absolute inset-0 w-full h-[90%] border-0"
         title="3D Background"
       />
       
