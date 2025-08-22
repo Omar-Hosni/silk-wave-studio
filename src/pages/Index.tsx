@@ -6,43 +6,47 @@ const Index = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
-      {/* Background Spline (no pointer events) */}
-      <div className="absolute top-0 left-0 w-full h-full md:h-[93vh] overflow-hidden z-0">
+      {/* Background Spline (non-interactive) */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <iframe
           src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
-          className="w-full h-full md:h-screen border-0 scale-110 md:scale-100 origin-center pointer-events-none"
+          className="w-full h-full border-0 scale-110 md:scale-100 origin-center pointer-events-none"
           title="3D Background"
           aria-hidden="true"
           tabIndex={-1}
         />
       </div>
 
-      {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6">
-        <div className="text-center pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
-          {/* Logo with tighter gap */}
+      {/* Content Overlay (interactive) */}
+      <div className="absolute inset-0 z-20 flex items-center justify-center px-4 sm:px-6">
+        <div className="pointer-events-auto text-center max-w-xs sm:max-w-lg lg:max-w-3xl">
+          {/* Logo — reduced spacing */}
           <div className="mb-2 sm:mb-3">
             <img
               src="/lovable-uploads/f0284862-5f6e-4c0c-8fda-6eb0e0104ecc.png"
               alt="Symphony Neuro-Tech Logo"
-              className="w-36 h-36 sm:w-36 sm:h-36 lg:w-72 lg:h-72 mx-auto object-contain"
+              className="w-32 h-32 sm:w-36 sm:h-36 lg:w-64 lg:h-64 mx-auto object-contain"
             />
           </div>
 
-          {/* Main Description — exactly two lines via a deliberate break */}
+          {/* Main Description — EXACTLY two lines */}
           <p className="mb-3 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug mx-auto">
-            AI-powered, clinic-ready focused ultrasound neuromodulation systems
-            <br className="block" />
-            and treatment protocol discovery.
+            <span className="whitespace-nowrap">
+              AI-powered, clinic-ready focused ultrasound neuromodulation systems
+            </span>
+            <br />
+            <span className="whitespace-nowrap">
+              and treatment protocol discovery.
+            </span>
           </p>
 
-          {/* Subtitle with reduced gap */}
+          {/* Subtitle — tighter gap */}
           <p className="mb-4 text-white/90 font-montserrat italic font-medium text-xs sm:text-sm lg:text-xl leading-relaxed">
             Designed by among the most experienced pioneers of the field
           </p>
 
-          {/* Launching Soon pill */}
-          <div className="mx-auto mb-2 w-fit rounded-full border border-primary/20 backdrop-blur-sm px-6 py-3 sm:px-8 sm:py-4 min-h-[44px] text-center">
+          {/* Launching Soon pill (same width feel as button via padding & min height) */}
+          <div className="mx-auto mb-2 w-fit rounded-full border border-primary/20 backdrop-blur-sm px-6 py-3 sm:px-8 sm:py-4 min-h-[44px]">
             <span className="text-primary font-medium text-sm sm:text-base">
               Launching Soon
             </span>
