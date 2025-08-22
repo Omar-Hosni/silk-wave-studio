@@ -242,6 +242,9 @@ All colors MUST be HSL.
     }
   }
 
+  
+
+
   .custom-cursor {
     @apply fixed w-6 h-6 pointer-events-none z-50;
     border: 2px solid rgba(255, 255, 255, 0.8);
@@ -321,3 +324,7 @@ All colors MUST be HSL.
     }
   }
 }
+
+html, body, #root {
+    cursor: auto !important;
+  }
