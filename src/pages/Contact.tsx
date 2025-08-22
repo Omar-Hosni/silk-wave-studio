@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { CustomCursor } from "@/components/CustomCursor";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -59,30 +60,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="flex justify-between items-center p-6">
-        <div className="text-lg font-medium">Symphony Neuro-Tech</div>
-        <div className="flex space-x-6 text-sm">
-          <button
-            onClick={() => navigate('/')}
-            className="hover:text-primary transition-colors"
-          >
-            Home
-          </button>
-          <button className="hover:text-primary transition-colors">Projects</button>
-          <button className="hover:text-primary transition-colors">About</button>
-          <button className="text-primary">Contact</button>
-        </div>
-      </nav>
-
-      <main className="container mx-auto px-6 py-16">
+    <>
+      <CustomCursor />
+      <div className="min-h-screen bg-black text-white">
+        <main className="container mx-auto px-6 py-24">
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl">
           <section className="space-y-12">
             <h1 className="text-4xl lg:text-6xl font-light leading-tight">
               Let&apos;s create something
               <br />
-              <span className="text-muted-foreground">unforgettable</span>
+              <span className="text-gray-400">unforgettable</span>
             </h1>
 
             <article className="space-y-8">
@@ -96,12 +83,12 @@ const Contact = () => {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-sm text-muted-foreground">Name</FormLabel>
+                          <FormLabel className="text-sm text-gray-400">Name</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
                               placeholder=""
-                              className="bg-transparent border-0 border-b border-input rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-primary"
+                              className="bg-transparent border-0 border-b border-gray-600 rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-blue-400 text-white"
                             />
                           </FormControl>
                           <FormMessage />
@@ -113,13 +100,13 @@ const Contact = () => {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-sm text-muted-foreground">Email</FormLabel>
+                          <FormLabel className="text-sm text-gray-400">Email</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
                               type="email"
                               placeholder=""
-                              className="bg-transparent border-0 border-b border-input rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-primary"
+                              className="bg-transparent border-0 border-b border-gray-600 rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-blue-400 text-white"
                             />
                           </FormControl>
                           <FormMessage />
@@ -133,12 +120,12 @@ const Contact = () => {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm text-muted-foreground">Company (optional)</FormLabel>
+                        <FormLabel className="text-sm text-gray-400">Company (optional)</FormLabel>
                         <FormControl>
                           <Input
                             {...field}
                             placeholder=""
-                            className="bg-transparent border-0 border-b border-input rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-primary"
+                            className="bg-transparent border-0 border-b border-gray-600 rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-blue-400 text-white"
                           />
                         </FormControl>
                         <FormMessage />
@@ -151,12 +138,12 @@ const Contact = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm text-muted-foreground">Your message...</FormLabel>
+                        <FormLabel className="text-sm text-gray-400">Your message...</FormLabel>
                         <FormControl>
                           <Textarea
                             {...field}
                             placeholder=""
-                            className="bg-transparent border-0 border-b border-input rounded-none px-0 resize-none min-h-24 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-primary"
+                            className="bg-transparent border-0 border-b border-gray-600 rounded-none px-0 resize-none min-h-24 focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-blue-400 text-white"
                           />
                         </FormControl>
                         <FormDescription className="text-xs">
@@ -167,7 +154,7 @@ const Contact = () => {
                     )}
                   />
 
-                  <Button type="submit" variant="outline" className="bg-transparent hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <Button type="submit" variant="outline" className="bg-transparent border-gray-600 text-white hover:bg-blue-500 hover:border-blue-500 transition-colors">
                     Submit
                   </Button>
                 </form>
@@ -178,7 +165,7 @@ const Contact = () => {
           <aside className="space-y-8 lg:pt-24">
             <div>
               <h2 className="text-lg font-medium mb-4">Get in touch</h2>
-              <div className="space-y-2 text-muted-foreground">
+              <div className="space-y-2 text-gray-400">
                 <p>hi@symphonyneurotech.com</p>
                 <p>+1 (555) 123-4567</p>
               </div>
@@ -187,14 +174,15 @@ const Contact = () => {
         </div>
       </main>
 
-      <footer className="absolute bottom-6 left-6 right-6 flex justify-between text-xs text-muted-foreground">
-        <p>Symphony Neuro-Tech © 2024</p>
-        <div className="flex space-x-4">
-          <span>Symphony Neuro-Tech Digital Design</span>
-          <span>KVK: 12345678</span>
-        </div>
-      </footer>
-    </div>
+        <footer className="absolute bottom-6 left-6 right-6 flex justify-between text-xs text-gray-500">
+          <p>Symphony Neuro-Tech © 2024</p>
+          <div className="flex space-x-4">
+            <span>Symphony Neuro-Tech Digital Design</span>
+            <span>KVK: 12345678</span>
+          </div>
+        </footer>
+      </div>
+    </>
   );
 };
 
