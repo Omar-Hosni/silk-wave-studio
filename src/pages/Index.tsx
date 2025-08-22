@@ -38,7 +38,7 @@ const Index = () => {
             Designed by among the most experienced pioneers of the field
           </p>
           
-          <div className="bg-primary/30 backdrop-blur-sm border border-primary/20 rounded-full px-4 py-2 sm:px-6 sm:py-3 mt-6 sm:mt-8">
+          <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-2 py-2 sm:px-6 sm:py-3 mt-6 sm:mt-8">
             <span className="text-primary font-medium text-sm sm:text-base">Launching Soon</span>
           </div>
           
