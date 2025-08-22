@@ -11,7 +11,7 @@ const Index = () => {
         <div className="w-full h-full overflow-hidden">
           <iframe 
             src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
-            className="w-full h-[65%] border-0"
+            className="w-full h-full border-0"
             title="3D Background"
           />
         </div>
