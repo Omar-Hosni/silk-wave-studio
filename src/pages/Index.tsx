@@ -28,9 +28,15 @@ const Index = () => {
             />
           </div>
           
-          {/* Main Description */}
-          <p className="mb-10 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug max-w-2xl sm:max-w-lg mx-auto">
-            AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery.
+          {/* Main Description — EXACTLY two lines */}
+          <p className="mb-3 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug mx-auto">
+            <span className="whitespace-nowrap">
+              AI-powered, clinic-ready focused ultrasound neuromodulation systems
+            </span>
+            <br />
+            <span className="whitespace-nowrap">
+              and treatment protocol discovery.
+            </span>
           </p>
           
           {/* Subtitle */}
