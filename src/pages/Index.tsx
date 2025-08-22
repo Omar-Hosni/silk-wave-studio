@@ -5,10 +5,10 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[95%] overflow-hidden">
       {/* Iframe Wrapper */}
       <div className="absolute inset-0 w-full h-full flex justify-center items-center">
-        <div className="w-full h-[50%] overflow-hidden">
+        <div className="w-full h-full overflow-hidden">
           <iframe 
             src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
             className="w-full h-full border-0"
