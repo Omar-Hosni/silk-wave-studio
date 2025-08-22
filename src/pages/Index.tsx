@@ -30,8 +30,8 @@ const Index = () => {
           
           {/* Main Description */}
           <h1 className="mb-5 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug max-w-md sm:max-w-lg mx-auto">
-            AI-powered, clinic-ready focused ultrasound neuromodulation<br /> 
-            systems and treatment protocol discovery.
+            AI-powered, clinic-ready focused ultrasound<br /> 
+            neuromodulation systems and treatment protocol discovery.
           </h1>
           
           {/* Subtitle */}
