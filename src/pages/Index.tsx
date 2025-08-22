@@ -18,13 +18,13 @@ const Index = () => {
     
       {/* Content Overlay - Mobile Responsive */}
       <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4 sm:px-6">
-        <div className="text-center pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
+        <div className="text-center space-y-4 sm:space-y-6 pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
           {/* Logo */}
           <div className="">
             <img 
               src="/lovable-uploads/f0284862-5f6e-4c0c-8fda-6eb0e0104ecc.png" 
               alt="Symphony Neuro-Tech Logo" 
-              className="w-36 h-36 sm:w-36 sm:h-36 lg:w-72 lg:h-72 mx-auto object-contain"
+              className="w-36 h-36 sm:w-36 sm:h-36 lg:w-72 lg:h-72 mx-auto my-auto object-contain"
             />
           </div>
           
