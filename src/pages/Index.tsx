@@ -10,7 +10,7 @@ const Index = () => {
     {/* Responsive Spline iframe */}
     <div className="absolute top-0 left-0 w-full h-full md:h-[93vh] overflow-hidden">
       <iframe
-        src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
+        src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
         className="w-full h-full md:h-screen border-0 scale-110 md:scale-100 origin-center" 
         title="3D Background"
       />
