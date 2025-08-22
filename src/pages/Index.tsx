@@ -17,10 +17,10 @@ const Index = () => {
     </div>
     
       {/* Content Overlay - Mobile Responsive */}
-      <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 px-4 sm:px-6 pointer-events-none">
-        <div className="text-center space-y-1 max-w-xs sm:max-w-lg lg:max-w-2xl pointer-events-auto">
+      <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4 sm:px-6">
+        <div className="text-center space-y-4 sm:space-y-6 pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
           {/* Logo */}
-          <div className="mb-2">
+          <div className="">
             <img 
               src="/lovable-uploads/f0284862-5f6e-4c0c-8fda-6eb0e0104ecc.png" 
               alt="Symphony Neuro-Tech Logo" 
@@ -29,13 +29,12 @@ const Index = () => {
           </div>
           
           {/* Main Description */}
-          <p className="mb-4 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-tight max-w-2xl sm:max-w-lg mx-auto">
-            AI-powered, clinic-ready focused ultrasound<br />
-            neuromodulation systems and treatment protocol discovery.
+          <p className="mb-10 text-white font-montserrat font-medium text-sm sm:text-base lg:text-xl leading-snug max-w-2xl sm:max-w-lg mx-auto">
+            AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery.
           </p>
           
           {/* Subtitle */}
-          <p className="mb-6 text-white/90 font-montserrat italic font-medium text-xs sm:text-sm lg:text-xl leading-relaxed">
+          <p className="mb-10 text-white/90 font-montserrat italic font-medium text-xs sm:text-sm lg:text-xl leading-relaxed">
             Designed by among the most experienced pioneers of the field
           </p>
           
