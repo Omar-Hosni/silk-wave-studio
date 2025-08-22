@@ -24,7 +24,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/f0284862-5f6e-4c0c-8fda-6eb0e0104ecc.png" 
               alt="Symphony Neuro-Tech Logo" 
-              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto object-contain"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-72 lg:h-72 mx-auto object-contain"
             />
           </div>
           
