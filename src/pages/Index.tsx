@@ -29,7 +29,7 @@ const Index = () => {
           </div>
           
           {/* Main Description */}
-          <h1 className="text-white font-montserrat font-medium text-sm sm:text-base lg:text-lg leading-relaxed">
+          <h1 className="text-white font-montserrat font-2xl text-sm sm:text-base lg:text-lg leading-relaxed">
             AI-powered, clinic-ready focused ultrasound neuromodulation systems and treatment protocol discovery.
           </h1>
           
