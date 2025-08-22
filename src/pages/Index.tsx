@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-
+import { CustomCursor } from "@/components/CustomCursor";
 const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black custom-cursor">
-
+    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <CustomCursor/>
     {/* Responsive Spline iframe */}
     <div className="absolute top-0 left-0 w-full h-full md:h-[93vh] overflow-hidden">
       <iframe
