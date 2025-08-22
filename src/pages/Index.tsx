@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Iframe Wrapper */}
-      <div className="absolute inset-0 w-full h-full flex justify-center items-center">
+      <div className="absolute inset-0 w-full h-[95%] flex justify-center items-center">
         <div className="w-full h-full overflow-hidden">
           <iframe 
             src="https://my.spline.design/claritystream-nqmLPOqSvUSlljKa81x5kdY7/"
