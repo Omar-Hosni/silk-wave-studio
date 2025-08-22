@@ -5,7 +5,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <div className="relative w-full h-screen overflow-hidden bg-black custom-cursor">
 
     {/* Responsive Spline iframe */}
     <div className="absolute top-0 left-0 w-full h-full md:h-[93vh] overflow-hidden">
