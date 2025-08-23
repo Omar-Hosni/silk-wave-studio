@@ -17,7 +17,7 @@ const Index = () => {
     </div>
     
       {/* Content Overlay - Mobile Responsive */}
-      <div className="mt-10 absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4 sm:px-6">
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none px-4 sm:px-6">
         <div className="text-center space-y-4 sm:space-y-6 pointer-events-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
           {/* Logo */}
           <div className="">
