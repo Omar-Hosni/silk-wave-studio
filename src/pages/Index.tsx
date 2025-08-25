@@ -15,7 +15,7 @@ const Index = () => {
           src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
           title="3D Background"
           className="
-            block w-[100vw] h-[90vh] border-0
+            block w-[100vw] h-[80vh] border-0
           "
         />
         {/* Fade to ensure wave edge never competes with content */}
