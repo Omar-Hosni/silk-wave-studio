@@ -38,6 +38,7 @@ export function CustomCursor() {
       style={{
         left: position.x,
         top: position.y,
+        zIndex: 2147483647,
       }}
     />
   );

@@ -14,10 +14,8 @@ const Index = () => {
         <iframe
           src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
           title="3D Background"
-          className="
-            block w-[100vw] h-[100vh] border-0
-          "
-        />
+          className="block w-[100vw] h-[100vh] border-0"
+          />
         
       </div>
 
@@ -29,7 +27,7 @@ const Index = () => {
           z-10 w-full px-5 sm:px-6
         "
       >
-        <div className="pointer-events-auto mx-auto max-w-[56rem] text-center space-y-4 sm:space-y-6">
+        <div className="pointer-events-auto mx-auto max-w-[56rem] text-center space-y-2 sm:space-y-3">
           {/* Logo */}
           <img
             src="/lovable-uploads/f0284862-5f6e-4c0c-8fda-6eb0e0104ecc.png"
@@ -38,12 +36,11 @@ const Index = () => {
           />
 
           {/* Headline: wraps on mobile, stays tidy on larger screens */}
-          <p className="text-white font-montserrat font-medium text-base sm:text-lg lg:text-2xl leading-relaxed sm:leading-snug text-pretty">
-            <span className="sm:whitespace-nowrap">
+          <p className="text-white font-montserrat font-medium text-[15px] sm:text-lg lg:text-2xl leading-snug text-pretty">
+            <span className="block">
               AI-powered, clinic-ready focused ultrasound neuromodulation systems
             </span>
-            <br className="hidden sm:block" />
-            <span className="sm:whitespace-nowrap">
+            <span className="block">
               and treatment protocol discovery.
             </span>
           </p>
