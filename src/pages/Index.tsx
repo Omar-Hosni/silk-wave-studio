@@ -10,7 +10,7 @@ const Index = () => {
       <CustomCursor />
 
       {/* Background Spline */}
-      {/* <div className="pointer-events-none fixed inset-0">
+      <div className="pointer-events-none fixed inset-0">
         <iframe
           src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
           title="3D Background"
@@ -18,16 +18,6 @@ const Index = () => {
             block w-[100vw] h-[100vh] border-0
           "
         />
-        {/* Fade to ensure wave edge never competes with content */}
-        {/* <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" /> */}
-
-        <div className="absolute top-0 left-0 w-full h-full md:h-[93vh] overflow-hidden">
-          <iframe
-            src="https://my.spline.design/claritystreamcopy-uCYCyHdwftnwvloMeshAjSzW/"
-            className="w-full h-full md:h-screen border-0 scale-110 md:scale-100 origin-center" 
-            title="3D Background"
-          />
-        </div>
         
       </div>
 
