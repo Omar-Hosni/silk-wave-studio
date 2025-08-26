@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { CustomCursor } from "@/components/CustomCursor";
 
 const Index = () => {
   const navigate = useNavigate();
