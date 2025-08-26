@@ -12,7 +12,7 @@ const Index = () => {
       {/* Background Video */}
       <div className="pointer-events-none fixed inset-0">
         <video
-          src="/background_video.mp4"
+          src="background_video.mp4"
           autoPlay
           loop
           muted
