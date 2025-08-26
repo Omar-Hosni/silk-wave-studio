@@ -26,7 +26,7 @@ const Index = () => {
       {/* Content Overlay */}
       <div
         className="
-          absolute left-1/2 top-[12vh] sm:top-1/2
+          absolute left-1/2 top-[8vh] sm:top-[45%]
           -translate-x-1/2 sm:-translate-y-1/2
           z-10 w-full px-5 sm:px-6
         "
@@ -36,7 +36,7 @@ const Index = () => {
           <img
             src="/lovable-uploads/logo.png"
             alt="Symphony Neuro-Tech Logo"
-            className="mx-auto w-36 h-24 sm:w-40 sm:h-28 lg:w-72 lg:h-48 object-contain"
+            className="mx-auto w-90 h-60 sm:w-[400px] sm:h-[280px] lg:w-[720px] lg:h-[480px] object-contain"
           />
 
           {/* Headline */}
