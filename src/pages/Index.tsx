@@ -7,7 +7,6 @@ const Index = () => {
 
   return (
     <div className="relative w-full min-h-dvh overflow-x-hidden overflow-y-hidden bg-black">
-      <CustomCursor />
 
       {/* Background Video */}
       <div className="pointer-events-none fixed inset-0">

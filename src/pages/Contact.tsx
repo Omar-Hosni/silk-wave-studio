@@ -61,7 +61,6 @@ const Contact = () => {
 
   return (
     <>
-      <CustomCursor />
       <div className="min-h-screen bg-black text-white">
         <main className="container mx-auto px-6 py-24">
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl">
