@@ -198,18 +198,7 @@ All colors MUST be HSL.
     }
   }
 
-  
-  html, * { cursor: none !important; }
 
-  .custom-cursor {
-    @apply fixed w-6 h-6 pointer-events-none z-50;
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-    transform: translate(-50%, -50%) scale(1);
-    backdrop-filter: blur(2px);
-    background: rgba(255, 255, 255, 0.1);
-  }
 
 }
 
