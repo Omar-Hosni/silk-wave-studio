@@ -36,7 +36,7 @@ const Index = () => {
           <img
             src="/lovable-uploads/logo.png"
             alt="Symphony Neuro-Tech Logo"
-            className="mx-auto w-90 h-60 sm:w-[400px] sm:h-[280px] lg:w-[720px] lg:h-[480px] object-contain"
+            className="mx-auto w-64 h-40 sm:w-72 sm:h-48 lg:w-[500px] lg:h-[333px] object-contain"
           />
 
           {/* Headline */}
